@@ -1,16 +1,88 @@
 /*Base Styles*/
-*{
+* {
+  box-sizing: border-box;
+}
+div#TitleSection{
+	font-size: 1.75em;
+	text-align: center;
+	padding :25px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+	font-family: "Georgia","Helectiva",sans-serif;
+}
+}
+.row{
+	width: 100%;
+	padding: 15px;
+
+}
+.section-header{
+	float: right;
+	border:1px solid black;
+	max-width: 50%;
+	height: auto;
+	padding: 5px;
+	position: relative;
+	top:0;
+	right: 0;
+	font-size: 1.25em;
+
+}
+.section-content{
+	background-color: #ddc8bc;	
+	border: 1px solid black;
+	position: relative;
+	margin:15px;
+}
+.section-content p{
+	clear: right;
+	padding: 15px;	
+}
+
+.orange{
+	background-color: #df6241;
+	color: #eff4f6;
+}
+.marroon{
+	background-color: #a3332b;
+	color: #eff4f6;
+}
+.brown{
+	background-color: #511714;
+	color: #eff4f6;
 }
 /*Desktop View*/
 @media(min-width:992px){
+.sub-section{
+	float:left;
+	width: 33.33%;	
+	height: auto;	
+}
 
 }
 /*Tablet View*/
-@media(min-width:768px and max-width: 991px){
-
+@media(min-width:768px) and (max-width: 991px){
+.sub-section{	
+	float:left;
+	width: 50%;	
+	height: auto;
+}
+.sub-section#SubSection3{	
+	clear: left;
+	float:left;
+	width: 100%;	
+	height: auto;
+}
 }
 /*Mobile View*/
-@medial(max-width:767px){
-
+@media(max-width:767px){
+.sub-section{
+	float:left;
+	width: 100%;	
+	height: auto;
+}
 }
